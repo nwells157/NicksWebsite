@@ -11,3 +11,6 @@ def index():
 def about():
     return render_template("about.html")
 
+@app.route('/workoutlog')
+def workoutlog():
+    return render_template('workoutlog.html')
