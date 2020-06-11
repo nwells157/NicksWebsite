@@ -2,12 +2,25 @@
 <html>
     <head>
         <title>Nick's Website</title>
-        <link href="format.css" rel="stylesheet" type="text/css">
+        <link href="../static/styles/index.css" rel="stylesheet" type="text/css">
+        <link href="../static/styles/reset.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
+        <meta charset="UTF-8">
     </head>
     <body>
-        {% block heading %}{% endblock %}
+        {% block heading %} {% endblock %}
 
-        {% block body %}
-        {% endblock %}
+        <div class="topnav">
+            <a   href="{{ url_for('index')}}">Home Page</a>
+            <a href="{{ url_for('workoutlog')}}">Workout Log</a>
+            <a href="#">Rainbow 6 Info</a>
+            <a href="{{ url_for('about')}}" style="float:right;">About me</a>
+        </div>
+
+        {% block body %} {% endblock %}
+        <br><br><br><br>
+        <div class='footer'>
+            <p>Copyright 2020.</p>
+        </div>
     </body>
 </html>

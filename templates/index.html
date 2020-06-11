@@ -1,9 +1,29 @@
 {% extends "layout.html" %}
 
 {% block heading %}
-<h1>This is Nick's website 2.0, hopefully this one will have a data base that can store some data</h1>
+
+<h1 class="header">Welcome to Nick's Website</h1>
+
 {% endblock %}
 
 {% block body %}
-<a href="{{ url_for('about')}}">This is the about me page.</a>
+
+
+<div class="row">
+    <div class="column">
+      <h2 class="title">Some basic info</h2>
+      <p>
+        This website is something I am creating in order to learn more about website development because it is growing trade and I want to have basic knowledge in it. I will be creating a workout blog and trying to incorporate new
+        styles and ideas throught my 90 day challenge.
+      </p>
+    </div>
+    
+    <div class="column">
+      <h2 class="title">My future goals</h2>
+      <p>
+        My future goals involve learning javascript to create some games and incorporate user activity in the website. I think this should be a good challenge and fun too. I am following the CS50 course on edx that is hosted by harvard.
+      </p>
+    </div>
+</div>
+
 {% endblock %}
